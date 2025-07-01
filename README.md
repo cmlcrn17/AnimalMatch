@@ -1,5 +1,6 @@
-🐾 AnimalMatch – iOS Kart Eşleşme Oyunu
-🎯 Proje Amacı
+# 🐾 AnimalMatch – iOS Kart Eşleşme Oyunu
+
+# 🎯 Proje Amacı
 AnimalMatch, iOS cihazlar için geliştirilen, hayvan temalı kartların eşleştirilmesine dayalı bir hafıza oyunudur. Oyuncular kartları çevirerek aynı hayvan çiftlerini bulmaya çalışır. Her doğru eşleşme puan kazandırırken, yanlış eşleşmeler puan kaybettirir. Oyun sonunda kullanıcıların skorları Firebase veritabanına kaydedilir. Oyuna giriş, Google hesabı ile yapılır. Bu sayede kullanıcıya özel skor takibi sağlanır.
 
 Proje, hem kullanıcı arayüzü tasarımı hem de backend entegrasyonu (Firebase + Google Sign-In) açısından iOS geliştiricileri için eğitici ve gerçek dünyaya yakın bir uygulama deneyimi sunar.
