@@ -23,48 +23,48 @@ Proje, hem kullanıcı arayüzü tasarımı hem de backend entegrasyonu (Firebas
 
 Skor sistemi:
 
-✅ +10 puan doğru eşleşme
+* ✅ +10 puan doğru eşleşme
 
-❌ –5 puan yanlış eşleşme
+* ❌ –5 puan yanlış eşleşme
 
-⏱ Bonus: kalan süreden ek puan
+* ⏱ Bonus: kalan süreden ek puan
 
-Oyun sonunda skor ekranı
+* Oyun sonunda skor ekranı
 
 🔹 Giriş Sistemi
-Google hesabı ile giriş yapılır
+* Google hesabı ile giriş yapılır
 
-Firebase Authentication kullanılır
+* Firebase Authentication kullanılır
 
-Her oyuncu kendi skor geçmişini görebilir
+* Her oyuncu kendi skor geçmişini görebilir
 
 🔹 Skor Takibi
-Firebase Firestore ile oyuncu skorları saklanır
+* Firebase Firestore ile oyuncu skorları saklanır
 
-Her skor şu bilgileri içerir:
+* Her skor şu bilgileri içerir:
 
-Skor puanı
+* Skor puanı
 
-Kalan süre
+* Kalan süre
 
-Tarih ve saat
+* Tarih ve saat
 
-Gelecekte istatistik ekranı oluşturulabilir
+* Gelecekte istatistik ekranı oluşturulabilir
 
 🔹 Arayüz ve Tema
-SwiftUI ile sade, kullanıcı dostu arayüz
+* SwiftUI ile sade, kullanıcı dostu arayüz
 
-Renkli ve eğlenceli hayvan görselleri
+* Renkli ve eğlenceli hayvan görselleri
 
-Opsiyonel olarak basit animasyon ve ses efektleri
+* Opsiyonel olarak basit animasyon ve ses efektleri
 
 📁 Kullanılan Teknolojiler
-Swift (SwiftUI)
+* Swift (SwiftUI)
 
-Firebase Authentication (Google Sign-In)
+* Firebase Authentication (Google Sign-In)
 
-Firebase Firestore
+* Firebase Firestore
 
-MVVM mimarisi
+* MVVM mimarisi
 
-Apple Swift Package Manager (Firebase SDK)
+* Apple Swift Package Manager (Firebase SDK)
