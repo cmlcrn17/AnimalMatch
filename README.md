@@ -4,17 +4,21 @@ AnimalMatch, iOS cihazlar için geliştirilen, hayvan temalı kartların eşleş
 
 Proje, hem kullanıcı arayüzü tasarımı hem de backend entegrasyonu (Firebase + Google Sign-In) açısından iOS geliştiricileri için eğitici ve gerçek dünyaya yakın bir uygulama deneyimi sunar.
 
-📦 Proje İçeriği
-🔹 Oyun Özellikleri
-3x4 düzeninde 12 kart (6 hayvan çifti)
 
-Kartlara dokunarak çevirme
+![ExampleUI](https://github.com/cmlcrn17/AnimalMatch/blob/main/AnimalMatchExampleUI.png)
 
-Doğru eşleşmede kartların sabitlenmesi
 
-Yanlış eşleşmede kartların geri dönmesi
+# 📦 Proje İçeriği
+## 🔹 Oyun Özellikleri
+* 3x4 düzeninde 12 kart (6 hayvan çifti)
 
-Oyun süresi: 60 saniye
+* Kartlara dokunarak çevirme
+
+* Doğru eşleşmede kartların sabitlenmesi
+
+* Yanlış eşleşmede kartların geri dönmesi
+
+* Oyun süresi: 60 saniye
 
 Skor sistemi:
 
