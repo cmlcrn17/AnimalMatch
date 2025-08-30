@@ -1,70 +1,41 @@
-# 🐾 AnimalMatch – iOS Kart Eşleşme Oyunu
+# 🐾 AnimalMatch
 
-# 🎯 Proje Amacı
-AnimalMatch, iOS cihazlar için geliştirilen, hayvan temalı kartların eşleştirilmesine dayalı bir hafıza oyunudur. Oyuncular kartları çevirerek aynı hayvan çiftlerini bulmaya çalışır. Her doğru eşleşme puan kazandırırken, yanlış eşleşmeler puan kaybettirir. Oyun sonunda kullanıcıların skorları Firebase veritabanına kaydedilir. Oyuna giriş, Google hesabı ile yapılır. Bu sayede kullanıcıya özel skor takibi sağlanır.
+## English
+AnimalMatch is a casual SwiftUI memory game where players flip animal cards to find matching pairs. The game uses a simple MVVM architecture and is optimized for iPhone screens.
 
-Proje, hem kullanıcı arayüzü tasarımı hem de backend entegrasyonu (Firebase + Google Sign-In) açısından iOS geliştiricileri için eğitici ve gerçek dünyaya yakın bir uygulama deneyimi sunar.
+### Features
+- 3x3 grid of animal emoji cards for the first level (scales up to 6x6).
+- Flip animations with scoring and timer.
+- Bonus points for quick matches, small penalty for wrong guesses.
+- Local high score saved with `UserDefaults`.
+- Simple settings to toggle sound effects and background music.
+- Placeholder audio manager ready for future asset integration.
 
+### Structure
+- `Models` – data models such as `Card` and `AppSettings`.
+- `ViewModels` – `GameViewModel` containing game logic.
+- `Views` – SwiftUI views (`HomeView`, `GameView`, `CardView`, etc.).
+- `Resources` – audio manager and future asset placeholders.
 
-![ExampleUI](https://github.com/cmlcrn17/AnimalMatch/blob/main/AnimalMatchExampleUI.png)
+### Running
+Open the project in Xcode 15 or later and run on an iOS 15+ simulator or device. Replace emoji with real images by adding them to the asset catalog and updating the model.
 
+## Türkçe
+AnimalMatch, oyuncuların hayvan kartlarını çevirerek eşleşen çiftleri bulmaya çalıştığı, SwiftUI ile geliştirilmiş rahat bir hafıza oyunudur. Oyun, iPhone ekranları için optimize edilmiş basit bir MVVM mimarisi kullanır.
 
-# 📦 Proje İçeriği
-## 🔹 Oyun Özellikleri
-* 3x4 düzeninde 12 kart (6 hayvan çifti)
+### Özellikler
+- İlk seviyede 3x3 boyutunda hayvan emojilerinden oluşan bir ızgara (6x6'ya kadar ölçeklenebilir).
+- Skor ve zamanlayıcıya sahip kart çevirme animasyonları.
+- Hızlı eşleşmeler için bonus puan, yanlış tahminler için küçük ceza.
+- `UserDefaults` ile saklanan yerel en yüksek skor.
+- Ses efektleri ve arka plan müziğini açıp kapatmak için basit ayarlar.
+- Gelecekteki varlık entegrasyonu için hazır bekleyen ses yöneticisi.
 
-* Kartlara dokunarak çevirme
+### Yapı
+- `Models` – `Card` ve `AppSettings` gibi veri modelleri.
+- `ViewModels` – oyun mantığını içeren `GameViewModel`.
+- `Views` – SwiftUI görünümleri (`HomeView`, `GameView`, `CardView`, vb.).
+- `Resources` – ses yöneticisi ve gelecekteki varlık yer tutucuları.
 
-* Doğru eşleşmede kartların sabitlenmesi
-
-* Yanlış eşleşmede kartların geri dönmesi
-
-* Oyun süresi: 60 saniye
-
-Skor sistemi:
-
-* ✅ +10 puan doğru eşleşme
-
-* ❌ –5 puan yanlış eşleşme
-
-* ⏱ Bonus: kalan süreden ek puan
-
-* Oyun sonunda skor ekranı
-
-🔹 Giriş Sistemi
-* Google hesabı ile giriş yapılır
-
-* Firebase Authentication kullanılır
-
-* Her oyuncu kendi skor geçmişini görebilir
-
-🔹 Skor Takibi
-* Firebase Firestore ile oyuncu skorları saklanır
-
-* Her skor şu bilgileri içerir:
-
-* Skor puanı
-
-* Kalan süre
-
-* Tarih ve saat
-
-* Gelecekte istatistik ekranı oluşturulabilir
-
-🔹 Arayüz ve Tema
-* SwiftUI ile sade, kullanıcı dostu arayüz
-
-* Renkli ve eğlenceli hayvan görselleri
-
-* Opsiyonel olarak basit animasyon ve ses efektleri
-
-📁 Kullanılan Teknolojiler
-* Swift (SwiftUI)
-
-* Firebase Authentication (Google Sign-In)
-
-* Firebase Firestore
-
-* MVVM mimarisi
-
-* Apple Swift Package Manager (Firebase SDK)
+### Çalıştırma
+Projeyi Xcode 15 veya üzeri sürümlerde açın ve iOS 15+ simülatörde veya cihazda çalıştırın. Emojileri gerçek görsellerle değiştirmek için varlık kataloğuna ekleyip modeli güncelleyin.
