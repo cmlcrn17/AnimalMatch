@@ -1,3 +1,5 @@
+// Audio playback is available on Apple platforms via AVFoundation.
+#if canImport(AVFoundation)
 import AVFoundation
 
 /// Manages background music and sound effects.
@@ -30,3 +32,16 @@ final class AudioManager {
         effectPlayer?.play()
     }
 }
+#else
+/// Fallback audio manager used when AVFoundation is unavailable.
+/// Provides no-op implementations so the package builds on platforms
+/// that don't support audio playback.
+final class AudioManager {
+    static let shared = AudioManager()
+    private init() {}
+
+    func playBackgroundMusic() {}
+    func stopBackgroundMusic() {}
+    func playMatchSound() {}
+}
+#endif
